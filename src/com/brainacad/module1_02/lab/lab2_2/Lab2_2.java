@@ -2,7 +2,6 @@ package com.brainacad.module1_02.lab.lab2_2;
 
 import java.util.Scanner;
 
-import java.lang.System.out.*;
 
 /**
  * Created by Дима on 21.12.2016.
@@ -14,8 +13,6 @@ public class Lab2_2 {
         String line = sc.nextLine();
 
         System.out.println(line);
-
-        println(line);
 
         sc.close();
     }
