@@ -1,4 +1,4 @@
-package com.brainacad.module1_06.lab;
+package com.brainacad.lab1_6;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -291,7 +291,7 @@ class Lab1_6_4 extends Lab1_6 {
 
        System.out.println();
        System.out.println("Using recursion");
-       System.out.println("I am looking for N in an intArray by recursion search ... ");
+       System.out.println("I am looking for N in an intArray by binary search ... ");
        System.out.println();
 
        int result = getNumberByRecursion(intArray,0,intArray.length-1,n);
@@ -401,22 +401,6 @@ class Lab1_6_6 extends Lab1_6 {
            temperature[i] = temperature[j];
            temperature[j] = temp;
 
-/**
-//        make another variant of algoritm
-
-           if (temperature[i] > 0 && temperature[j] < 0) {
-               int temp = temperature[i];
-               temperature[i] = temperature[j];
-               temperature[j] = temp;
-               i++;
-               j--;
-           } else if (temperature[i] < 0) {
-               i++;
-           } else if (temperature[j] > 0) {
-               j--;
-           }
-*/
-
        }
 
        System.out.println(Arrays.toString(temperature));
@@ -458,9 +442,60 @@ class Lab1_6_7 extends Lab1_6 {
 
    }
 
+   private void printMatrix(int[][] intArray, int row, int col) {
+	   
+	   System.out.print("Column    ");
+	   
+	   for (int a = 0; a < col; a++) {
+    	   if (a < 10) {
+        	   System.out.print("[0" + a + "] ");
+    	   } else {
+        	   System.out.print("[" + a + "] ");
+    	   }
+	   }
+	   
+	   System.out.println();
+       
+       for (int i = 0; i < row; i++) {
+
+		   System.out.print("         ");
+		   
+    	   for (int a = 0; a < col; a++) {
+			   System.out.print("-----");
+		   }
+    	   
+		   System.out.print("-");
+		   System.out.println();
+    	   
+    	   if (i < 10) {
+        	   System.out.print("Line[0" + i + "] ");
+    	   } else {
+        	   System.out.print("Line[" + i + "] ");
+    	   }
+           
+    	   for (int j = 0; j < col; j++) {
+			   if (intArray[i][j] < 10) {
+				   System.out.print("|  " + intArray[i][j] + " ");
+			   } else {
+				   System.out.print("| " + intArray[i][j] + " ");
+			   }
+    	   }
+		   System.out.println("|");
+       }
+
+	   System.out.print("         ");
+	   
+	   for (int a = 0; a < col; a++) {
+		   System.out.print("-----");
+	   }
+	   
+	   System.out.print("-");
+	   System.out.println();
+   }
+   
    void showLabResult() {
 
-	   final int SIZE = 20, RANGE = 5;
+	   final int SIZE = 15, RANGE = 5;
 
 	   int[][] intArray = new int[SIZE][SIZE];
 
@@ -470,9 +505,17 @@ class Lab1_6_7 extends Lab1_6 {
        System.out.println();
 
        for (int i = 0; i < SIZE; i++) {
-    	   for (int j = 0; j < SIZE; j++) {
-               System.out.println("intArray[" + i + "]" + "[" + j + "]" + " = " + (intArray[i][j] = (int) (Math.random() * RANGE)));
+    	   
+    	   if (i < 10) {
+               System.out.print("intArray[0" + i + "]" + "[0-" + (SIZE-1) + "]" + " = { ");
+    	   } else {
+        	   System.out.print("intArray[" + i + "]" + "[0-" + (SIZE-1) + "]" + " = { ");
     	   }
+           
+    	   for (int j = 0; j < SIZE; j++) {
+               System.out.print((intArray[i][j] = (int) (Math.random() * RANGE)) + " ");
+    	   }
+           System.out.println("}");
        }
 
        System.out.println();
@@ -481,34 +524,8 @@ class Lab1_6_7 extends Lab1_6 {
        System.out.println();
        System.out.println();
 	   
-	   for(int[] row:intArray) {
-
-		   for (int i = 0; i < SIZE; i++) {
-			   System.out.print("-----");
-		   }
-		   System.out.print("-");
-		   System.out.println();
-
-		   for (int item:row) {
-			   
-			   if (item < 10) {
-				   System.out.print("|  " + item + " ");
-			   } else {
-				   System.out.print("| " + item + " ");
-			   }
-		   
-		   }
-		   
-		   System.out.println("|");
-	   }
-
-	   for (int i = 0; i < SIZE; i++) {
-		   System.out.print("-----");
-	   }
-
-	   System.out.print("-");
-	   System.out.println();
-
+       printMatrix(intArray, SIZE, SIZE);
+       
        System.out.println();
        System.out.println();
 
@@ -519,13 +536,15 @@ class Lab1_6_7 extends Lab1_6 {
 
        n = getSymbol.nextInt();
        
+       System.out.println();
+       
        // find entering
        for (int i = 0; i < SIZE; i++) {
 
     	   String enteringRow = "";
 
-    	   boolean isFirstItem = false;
-    	   boolean isLastItem = false;
+    	   boolean isItFirstItem = false;
+    	   boolean isItLastItem = false;
     	   
     	   boolean isPrevEqual = false;
     	   boolean isNextEqual = false;
@@ -535,71 +554,48 @@ class Lab1_6_7 extends Lab1_6 {
     	   for (int j = 0; j < SIZE; j++) {
 			   
 			   if (j == 0) {
-				   isFirstItem = true;
+				   isItFirstItem = true;
 			   } else {
-				   isFirstItem = false;
+				   isItFirstItem = false;
 			   }
 				   
-			   if (j == SIZE) {
-				   isLastItem = true;
+			   if (j == (SIZE-1)) {
+				   isItLastItem = true;
 			   } else {
-				   isLastItem = false;
+				   isItLastItem = false;
 			   }
 			   
     		   if (intArray[i][j] == n) {
 
-    			   if (j > 0 && j < SIZE) {
+    			   if (!isItFirstItem) {
     					 isPrevEqual =  (intArray[i][j - 1] == n)?true:false;
     				   } else {
     					 isPrevEqual = false;  
     				   }
 
-    				   if (j >= 0 && j < SIZE-1) {
+   				   if (!isItLastItem) {
     					 isNextEqual =  (intArray[i][j + 1] == n)?true:false;
     				   } else {
    						 isNextEqual = false;  
     				   }
 
-    			   if (isFirstItem && isNextEqual) {
+       			   if (isEntering && !isItFirstItem && !isPrevEqual) {
+					   enteringRow += ",";
+				   }
+   				   
+    			   if (isItFirstItem || !isPrevEqual || !isNextEqual) {
 					   enteringRow += j;
+    			   } 
+   				   
+    			   if (!isPrevEqual && isNextEqual) {
 					   enteringRow += "-";
     			   }
-
-    			   if (isFirstItem && !isNextEqual) {
-					   enteringRow += j;
-    			   }
-    			   
-    			   if (!isFirstItem && !isPrevEqual && isNextEqual && !isLastItem) {
-					   if (isEntering) {
-						   enteringRow += ",";
-					   }
-					   
-					   enteringRow += j;
-					   enteringRow += "-";
-    			   }
-
-    			   if (!isFirstItem && !isPrevEqual && !isNextEqual && !isLastItem) {
-					   if (isEntering) {
-						   enteringRow += ",";
-					   }
-					   
-					   enteringRow += j;
-    			   }
-    			   
-//    			   if (!isFirstItem && isPrevEqual && !isNextEqual && !isLastItem) {
-    			   if (!isFirstItem && isPrevEqual && !isNextEqual) {
-					   enteringRow += j;
-    			   }
-    			   
-//    			   if (isLastItem) {
-//					   enteringRow += j;
-//    			   }
     			
     			   isEntering = true;
     		   } 
     	   }   
 
-    	   System.out.println("Line " + (i + 1) + ": " + "[" + enteringRow + "]");
+    	   System.out.println("Line " + i + ": " + "[" + enteringRow + "]");
        }
    }
 }
