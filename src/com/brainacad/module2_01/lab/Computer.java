@@ -55,7 +55,17 @@ public class Computer {
         this.frequencyCPU = frequencyCPU;
     }
 
-    // Lab 2_1_5
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "manufacturer='" + manufacturer + '\'' +
+                ", serialNumber=" + serialNumber +
+                ", price=" + price +
+                ", quantityCPU=" + quantityCPU +
+                ", frequencyCPU=" + frequencyCPU +
+                '}';
+    }
+// Lab 2_1_5
 
     public void view() {
         System.out.print("Manufacturer - > " + manufacturer + "; ");

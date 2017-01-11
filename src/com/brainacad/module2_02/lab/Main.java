@@ -17,28 +17,28 @@ public class Main {
         matr_1 = matrix.initMatrix(SIZE);
         matr_2 = matrix.initMatrix(SIZE);
 
-        System.out.println("");
+        System.out.println();
         System.out.println("Matrix 1 [" + matr_1.length + "][" + matr_1.length + "]");
-        System.out.println("");
+        System.out.println();
         matrix.printMatrix(matr_1);
 
-        System.out.println("");
+        System.out.println();
         System.out.println("Matrix 2 [" + matr_2.length + "][" + matr_2.length + "]");
-        System.out.println("");
+        System.out.println();
         matrix.printMatrix(matr_2);
 
         addMatr = matrix.addMatrix(matr_1, matr_2);
 
-        System.out.println("");
+        System.out.println();
         System.out.println("Add result matrix [" + addMatr.length + "][" + addMatr.length + "]");
-        System.out.println("");
+        System.out.println();
         matrix.printMatrix(addMatr);
 
         multMatr = matrix.multMatrix(matr_1, matr_2);
 
-        System.out.println("");
+        System.out.println();
         System.out.println("Multiply result matrix [" + multMatr.length + "][" + multMatr.length + "]");
-        System.out.println("");
+        System.out.println();
         matrix.printMatrix(multMatr);
 
   */
