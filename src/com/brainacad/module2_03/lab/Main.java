@@ -33,9 +33,9 @@ public class Main {
         // lab_2_3_5
 
         System.out.println("-------------------------");
-        MyWindow[] windows = {myWin_1, window, myWindow_1};
+        MyWindow[] myWindows = {myWin_1, window, myWindow_1};
 
-        for (MyWindow win : windows) {
+        for (MyWindow win : myWindows) {
             win.printFields();
         }
 
