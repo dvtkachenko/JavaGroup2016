@@ -5,6 +5,8 @@ package com.brainacad.module2_04.lab;
  */
 public class MyCalc {
 
+	static double pi = calcPI(100000);
+	
     public static double calcPI(int n) {
 
         double result = 0;
@@ -18,5 +20,6 @@ public class MyCalc {
 
     public static void main(String[] args) {
         System.out.println(calcPI(50000));
+        System.out.println(pi);
     }
 }
