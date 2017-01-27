@@ -200,12 +200,15 @@ public class Main {
 			if (sh instanceof Circle) sumCircleArea += sh.calcArea(); 
 			if (sh instanceof Triangle) sumTriangleArea += sh.calcArea(); 
 		}
+		
 		System.out.println();
 		System.out.printf("Rectangle's total area is %.2f", sumRectArea); 
 		System.out.println();
 		System.out.printf("Circle's total area is %.2f", sumCircleArea); 
 		System.out.println();
 		System.out.printf("Triangle's total area is %.2f", sumTriangleArea);
+		System.out.println();
+		System.out.printf("Total area of all shapes is %.2f", sumArea);
 		System.out.println();
 		
 		
