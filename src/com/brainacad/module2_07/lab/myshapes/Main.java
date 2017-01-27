@@ -1,4 +1,4 @@
-package com.brainacad.module2_07.myshapes;
+package com.brainacad.module2_07.lab.myshapes;
 
 class Shape {
 	private String shapeColor;

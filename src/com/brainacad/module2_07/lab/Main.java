@@ -1,4 +1,4 @@
-package com.brainacad.module2_07;
+package com.brainacad.module2_07.lab;
 
 /**
  * Created by Дима on 25.01.2017.
