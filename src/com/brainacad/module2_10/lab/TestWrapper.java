@@ -134,11 +134,11 @@ class TestWrapper5 {
 public class TestWrapper {
     public static void main(String[] args) {
         // lab2_10_1
-//        TestWrapper1 tw1 = new TestWrapper1();
-//        tw1.test();
+        TestWrapper1 tw1 = new TestWrapper1();
+        tw1.test();
         // lab2_10_2
         TestWrapper2 tw2 = new TestWrapper2();
-//        tw2.test();
+        tw2.test();
         // lab2_10_3
         TestWrapper3 tw3 = new TestWrapper3();
         tw3.test();
