@@ -75,7 +75,7 @@ public class TrainSchedule {
                     ", stationArrival='" + stationArrival + '\'' +
                     ", timeDispatch='" + timeDispatch + '\'' +
                     ", timeArrival='" + timeArrival + '\'' +
-                    ", days=" + Arrays.toString(days) +
+                    ", day=" + Arrays.toString(day) +
                     '}';
         }
     }
