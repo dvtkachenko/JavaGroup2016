@@ -134,7 +134,7 @@ public class TrainSchedule {
         }
     }
 }
-
+// lab 2_13_5
 class Main {
     public static void main(String[] args) {
         TrainSchedule trainSchedule = new TrainSchedule(4);

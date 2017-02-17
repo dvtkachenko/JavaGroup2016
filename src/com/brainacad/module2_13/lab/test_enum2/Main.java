@@ -18,7 +18,7 @@ class Card {
         return String.format("The card : %s_%s", cardRank.toString(), cardSuit.toString());
     }
 }
-
+// lab 2_13_4
 public class Main {
 
     enum Suit {SPADE, DIAMOND, CLUB, HEART}
