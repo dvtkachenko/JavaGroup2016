@@ -47,7 +47,7 @@ public class MyTuple<A,B,C> {
                 '}';
     }
 }
-
+// lab 2_14_1
 class Main {
     public static void main(String[] args) {
         MyTuple myTuple = new MyTuple<String, Integer, Long>("Test",328474,9821982198L);

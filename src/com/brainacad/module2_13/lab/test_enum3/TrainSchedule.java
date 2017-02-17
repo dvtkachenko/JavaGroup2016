@@ -119,11 +119,34 @@ public class TrainSchedule {
     public void searchTrain(String stationDispatch, String stationArrival, DayOfWeek day) {
         for (int i = 0; i < trains.length; i++) {
             if (stationDispatch.equals(trains[i].getStationDispatch()) &&
-                stationDispatch.equals(trains[i].getStationArrival())) {
-                // внести остальной код с фотографий
+                stationArrival.equals(trains[i].getStationArrival())) {
+                // next day
+                DayOfWeek[] VALUES = DayOfWeek.values();
+                int index = DayOfWeek.valueOf(day.toString()).ordinal() + 1;
+                if (index == 7) index = 0;
+                //
+                String value = VALUES[index].toString();
+                String trnValue = trains[i].getDay()[0].toString();
+                if (value.equals(trnValue)) {
+                    System.out.println("Search train : " + trains[i].toString());
+                }
             }
         }
     }
+}
 
+class Main {
+    public static void main(String[] args) {
+        TrainSchedule trainSchedule = new TrainSchedule(4);
+        trainSchedule.addTrain();
+        trainSchedule.printTrain();
+        System.out.println();
+        trainSchedule.searchTrain("A", "B", TrainSchedule.DayOfWeek.SUNDAY);
 
+//      вводимые значения
+//      234,MONDAY,A,B,4,5
+//      675,SATURDAY,C,D,6,7
+//      45,FRIDAY,C,D,11,18
+//      815,MONDAY,A,B,8,9
+    }
 }
