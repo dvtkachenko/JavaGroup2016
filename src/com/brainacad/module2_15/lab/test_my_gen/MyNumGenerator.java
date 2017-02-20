@@ -3,7 +3,7 @@ package com.brainacad.module2_15.lab.test_my_gen;
 import java.util.*;
 
 /**
- * Created by Ð”Ð¸Ð¼Ð° on 17.02.2017.
+ * Created by Äèìà on 17.02.2017.
  */
 public class MyNumGenerator {
     // lab 2_15_4
@@ -50,6 +50,7 @@ class Main {
 
         MyNumGenerator objectList = new MyNumGenerator(12,20);
         System.out.println("List -> " + objectList.generate());
+        System.out.println();
 
         // lab 2_15_5
         // try to understand how it works

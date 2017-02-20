@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/com/brainacad/calc/Main.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/brainacad/module1_05/lab/MainOfLab1_5.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/com/brainacad/module1_06/lab/MainOfLab1_6.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/brainacad/module2_15/lab/test_map1/MyTranslator.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/com/brainacad/module2_15/lab/test_my_gen/MyNumGenerator.java" charset="windows-1251" />
   </component>
 </project>
