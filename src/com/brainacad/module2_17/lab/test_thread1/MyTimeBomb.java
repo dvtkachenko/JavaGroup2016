@@ -39,22 +39,20 @@ class MyTimeBombRunnable implements Runnable {
 // lab2_17_1
 class MainThread {
     public static void main(String[] args) {
-        System.out.println("lab2_17_1 - method main start");
+        System.out.println("lab2_17_1 - method main started");
         MyTimeBombThread bombThread = new MyTimeBombThread();
         bombThread.start();
-        System.out.println("lab2_17_1 - method main finish");
-
+        System.out.println("lab2_17_1 - method main finished");
     }
 }
 
 // lab2_17_2
 class MainRunnable {
     public static void main(String[] args) {
-        System.out.println("lab2_17_2 - method main start");
+        System.out.println("lab2_17_2 - method main started");
         MyTimeBombRunnable bombRunnable = new MyTimeBombRunnable();
         Thread thread = new Thread(bombRunnable);
         thread.start();
-        System.out.println("lab2_17_2 - method main finish");
-
+        System.out.println("lab2_17_2 - method main finished");
     }
 }
