@@ -1,21 +1,24 @@
-package com.brainacad.module2_17.lab.test_thread3;
+package com.brainacad.module2_17.lab.test_thread3_temp;
 
 /**
  * Created by Дима on 23.02.2017.
  */
-
-// lab2_17_5
-
 class Store {
     private int count = 0;
     private boolean ready = true;
 
     public int getCount() {
-        return count;
+
+        synchronized (this) {
+            return count;
+        }
     }
 
     public void setCount(int count) {
-        this.count = count;
+
+        synchronized (this) {
+            this.count = count;
+        }
     }
 
     public boolean isReady() {
@@ -28,7 +31,7 @@ class Store {
 }
 
 class Counter extends Thread {
-    private  Store store;
+    private Store store;
 
     Counter (Store store) {
         this.store = store;
@@ -36,28 +39,24 @@ class Counter extends Thread {
 
     @Override
     public void run() {
-        System.out.println("Thread Counter started");
         while(!isInterrupted()) {
             synchronized (store) {
                 try {
-//                    while (!store.isReady()) {
-                    System.out.println("Thread Counter waited");
-                    store.wait();
-                    System.out.println("Thread Counter after waited");
-//                    }
+                    while (!store.isReady()) {
+                        wait();
+                    }
                 } catch (InterruptedException e) {
                     return;
                 }
-//                store.setReady(false);
+                store.setReady(false);
                 int temp = store.getCount();
                 temp++;
                 store.setCount(temp);
                 System.out.println("Counter = " + temp);
-//                store.setReady(true);
+                store.setReady(true);
                 store.notify();
             }
         }
-        System.out.println("Thread Counter finished");
     }
 }
 
@@ -70,30 +69,24 @@ class Printer extends Thread {
 
     @Override
     public void run() {
-        System.out.println("Thread Printer started");
         while(!isInterrupted()) {
             synchronized (store) {
-//               try {
-//                   while(!store.isReady()) {
-                   System.out.println("Thread Printer waited");
-//                       store.wait();
-                   System.out.println("Thread Printer after waited");
-//                   }
-//               } catch (InterruptedException e) {
-//                   return;
-//               }
-//               store.setReady(false);
-               System.out.println("Printer = " + store.getCount());
-//               store.setReady(true);
-               store.notify();
+                try {
+                    while(!store.isReady()) { wait(); }
+                } catch (InterruptedException e) {
+                    return;
+                }
+                store.setReady(false);
+                System.out.println("Printer = " + store.getCount());
+                store.setReady(true);
+                store.notify();
             }
         }
-        System.out.println("Thread Printer finished");
     }
 }
 
 // lab2_17_5
-public class Main {
+public class MainTest {
     public static void main(String[] args) {
 
         System.out.println("Method main of class Main started");
@@ -105,15 +98,16 @@ public class Main {
         counter.start();
         printer.start();
 /**
-        try {
-            Thread.sleep(10);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+ try {
+ Thread.sleep(10);
+ } catch (InterruptedException e) {
+ e.printStackTrace();
+ }
 
-        counter.interrupt();
-        printer.interrupt();
-*/
+ counter.interrupt();
+ printer.interrupt();
+ */
         System.out.println("Method main of class Main finished");
     }
 }
+
