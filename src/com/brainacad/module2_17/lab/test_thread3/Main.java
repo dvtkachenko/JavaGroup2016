@@ -8,7 +8,7 @@ package com.brainacad.module2_17.lab.test_thread3;
 
 class Store {
     private int count = 0;
-    private boolean ready = true;
+    private boolean counted = false;
 
     public int getCount() {
         return count;
@@ -18,12 +18,12 @@ class Store {
         this.count = count;
     }
 
-    public boolean isReady() {
-        return ready;
+    public boolean isCounted() {
+        return counted;
     }
 
-    public void setReady(boolean ready) {
-        this.ready = ready;
+    public void setCounted(boolean counted) {
+        this.counted = counted;
     }
 }
 
@@ -40,21 +40,20 @@ class Counter extends Thread {
         while(!isInterrupted()) {
             synchronized (store) {
                 try {
-//                    while (!store.isReady()) {
-                    System.out.println("Thread Counter waited");
+                    while (store.isCounted()) {
+                    System.out.println("Thread Counter is waiting");
                     store.wait();
-                    System.out.println("Thread Counter after waited");
-//                    }
+                    System.out.println("Thread Counter is increasing count");
+                    }
                 } catch (InterruptedException e) {
                     return;
                 }
-//                store.setReady(false);
                 int temp = store.getCount();
                 temp++;
                 store.setCount(temp);
-                System.out.println("Counter = " + temp);
-//                store.setReady(true);
-                store.notify();
+                System.out.println("Increased Counter = " + temp);
+                store.notifyAll();
+                store.setCounted(true);
             }
         }
         System.out.println("Thread Counter finished");
@@ -73,19 +72,18 @@ class Printer extends Thread {
         System.out.println("Thread Printer started");
         while(!isInterrupted()) {
             synchronized (store) {
-//               try {
-//                   while(!store.isReady()) {
-                   System.out.println("Thread Printer waited");
-//                       store.wait();
-                   System.out.println("Thread Printer after waited");
-//                   }
-//               } catch (InterruptedException e) {
-//                   return;
-//               }
-//               store.setReady(false);
+               try {
+                   while (!store.isCounted()) {
+                       System.out.println("Thread Printer is waiting");
+                       store.wait();
+                       System.out.println("Thread Printer is printing count");
+                   }
+               } catch (InterruptedException e) {
+                   return;
+               }
                System.out.println("Printer = " + store.getCount());
-//               store.setReady(true);
-               store.notify();
+               store.notifyAll();
+               store.setCounted(false);
             }
         }
         System.out.println("Thread Printer finished");
@@ -104,16 +102,7 @@ public class Main {
 
         counter.start();
         printer.start();
-/**
-        try {
-            Thread.sleep(10);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
-        counter.interrupt();
-        printer.interrupt();
-*/
         System.out.println("Method main of class Main finished");
     }
 }
