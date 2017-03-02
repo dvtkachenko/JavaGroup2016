@@ -14,33 +14,40 @@ import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
-        // current Locale
+        // for current Locale
         System.out.println("Current Locale");
         Locale currentLocale = Locale.getDefault();
-        NumberFormat nf = NumberFormat.getInstance(currentLocale);
-        Currency currency = Currency.getInstance(currentLocale);
-        Date date = new Date();
+        NumberFormat currentNF = NumberFormat.getInstance(currentLocale);
+        NumberFormat currentCurrencyNF = NumberFormat.getCurrencyInstance(Locale.getDefault());
+        Currency currentCurrency = Currency.getInstance(currentLocale);
 
         System.out.println("CurrentLocale : " + currentLocale.getDisplayLanguage() + " (" + currentLocale.getDisplayCountry() + ")");
-        System.out.println("Integer : " + nf.format(1231283198));
-        System.out.println("Double : " + nf.format(474.8583));
-
-        NumberFormat curFmt = NumberFormat.getCurrencyInstance(Locale.getDefault());
-
-        System.out.println("Currency : " + currency.getDisplayName() + " : " + curFmt.format(329823982));
+        System.out.println("Integer : " + currentNF.format(1231283198));
+        System.out.println("Double : " + currentNF.format(474.8583));
+        System.out.println("Currency : " + currentCurrency.getDisplayName() + " : " + currentCurrencyNF.format(329823982));
         System.out.println("Date : " + new Date());
 
-        // forChina
+        // for China
+        System.out.println();
         System.out.println("CHINA");
-        NumberFormat nfChina = NumberFormat.getInstance(Locale.CHINA);
-        System.out.println("Integer : " + nfChina.format(1231283198));
-        System.out.println("Double : " + nfChina.format(474.8583));
+        NumberFormat chinaNF = NumberFormat.getInstance(Locale.CHINA);
+        NumberFormat chinaCurrencyNF = NumberFormat.getCurrencyInstance(Locale.CHINA);
+        Currency chinaCurrency = Currency.getInstance(Locale.CHINA);
 
-        NumberFormat fmtChina = NumberFormat.getCurrencyInstance(Locale.CHINA);
-        Currency currChina = Currency.getInstance(Locale.CHINA);
-        System.out.println("Currency : " + currChina.getDisplayName() + " : " + fmtChina.format(329823982));
+        System.out.println("Integer : " + chinaNF.format(1231283198));
+        System.out.println("Double : " + chinaNF.format(474.8583));
+        System.out.println("Currency : " + chinaCurrency.getDisplayName() + " : " + chinaCurrencyNF.format(329823982));
 
-        // It is needed to do for Italy
+        // for Italy
+        System.out.println();
+        System.out.println("ITALY");
+        NumberFormat italyNF = NumberFormat.getInstance(Locale.ITALY);
+        NumberFormat italyCurrencyNF = NumberFormat.getCurrencyInstance(Locale.ITALY);
+        Currency italyCurrency = Currency.getInstance(Locale.ITALY);
+
+        System.out.println("Integer : " + italyNF.format(1231283198));
+        System.out.println("Double : " + italyNF.format(474.8583));
+        System.out.println("Currency : " + italyCurrency.getDisplayName() + " : " + italyCurrencyNF.format(329823982));
 
         // just experiment
 //        DateFormat df = DateFormat.getDateInstance(0, Locale.GERMAN);
