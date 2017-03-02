@@ -20,7 +20,7 @@ public class Main {
             Runtime.getRuntime().exec(programs[index]);
             //
             System.out.println();
-            System.out.println("You can run some programm manually for example");
+            System.out.println("Now you can run some programms manually for example");
             System.out.println("notepad.exe, calc.exe, mspaint.exe, charmap.exe");
             System.out.println("Enter program's name you want to run : ");
             Scanner getProgram = new Scanner(System.in);
