@@ -8,7 +8,7 @@ import java.io.*;
 
 // lab3_1_2
 //  parameter args[0] for IntelliJ IDEA
-//  "src\test_files\temp.txt"
+//  "src\files\temp.txt"
 public class PrintFile {
     public static void main(String[] args) {
         File file = null;
