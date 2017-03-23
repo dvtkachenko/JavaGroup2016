@@ -1,0 +1,8 @@
+Streams support many different kinds of data,
+including simple bytes, primitive data types,
+localized characters, and objects.
+Some streams simply pass on data;
+others manipulate and transform the data in useful ways.
+No matter how they work internally,
+all streams present the same simple model
+to programs that use them: A stream is a sequence of data.
