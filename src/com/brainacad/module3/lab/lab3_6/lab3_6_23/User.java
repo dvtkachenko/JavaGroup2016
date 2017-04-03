@@ -29,7 +29,7 @@ public class User {
         this.permissions.add(pa);
     }
 
-    public List<PermissionAction> getPerrmission() {
+    public List<PermissionAction> getPerrmissions() {
         return this.permissions;
     }
 }
