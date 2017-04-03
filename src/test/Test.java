@@ -1,31 +1,56 @@
 package test;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 /**
  * Created by Дима on 26.01.2017.
  */
-class King {
-    King() {
-        System.out.println("Call King constructor");
-        speech();
-    }
-   public void speech() {
-       System.out.println("I'm the King of the Andals!");
-    }
-}
-class AerysTargaryen extends King {
-       private String victimName;
-   AerysTargaryen() {
-      System.out.println("Call AerysTargaryen constructor");
-      victimName = "Lyanna Stark";
-      speech();
-   }
-      @Override
-   public void speech() {
-       System.out.println("Burn " + victimName + "!");
-   }
-}
+
 public class Test {
    public static void main(String[] args) {
-       King king = new AerysTargaryen();
+
+       Connection conn = null;
+
+       try {
+           String query = "SELECT * FROM Item WHERE ID=110";
+           Statement stmt = conn.createStatement();
+           ResultSet rs = stmt.executeQuery(query);
+           while (rs.next ()) {
+               System.out.println("ID: " + rs.getInt("Id"));
+               System.out.println("Description: " + rs.getString("Descrip"));
+               System.out.println("Price: " + rs.getDouble("Price"));
+               System.out.println("Quantity: "+ rs.getInt("Quantity"));
+           }
+       } catch (SQLException se) {
+           System.out.println("Error");
+       }
+
+       try {
+           String query = "SELECT * FROM Employee WHERE ID=110";
+           Statement stmt = conn.createStatement();
+           ResultSet rs = stmt.executeQuery(query); // Line1
+           System.out.println("Employee ID: " + rs.getInt("ID"));  // Line2
+       } catch (Exception se) {
+           System.out.println("Error");
+       }
+
+
+
+
+       String query = "SELECT ID FROM Employee";
+       try (Statement stmt = conn.createStatement()) {
+           ResultSet rs = stmt.executeQuery(query);
+           stmt.executeQuery ("SELECT ID FROM Customer");
+           while (rs.next()) {
+// process the results
+               System.out.println ("Employee ID: " + rs.getInt("ID") );
+           }
+       } catch (Exception e) {
+           System.out.println ("Error");
+       }
+
    }
 }
