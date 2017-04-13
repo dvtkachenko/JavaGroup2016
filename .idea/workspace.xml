@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ff06218-dd91-4058-af93-8fd6adea2904" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module3/lab/lab3_8/lab3_8_12/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module3/lab/lab3_8/temp3_8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/temp3_8.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module2_17/lab/test_thread3/Main.class" afterPath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module2_17/lab/test_thread3/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyClient.class" afterPath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyServer.class" afterPath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module3/lab/lab3_8/lab3_8_12/Student.class" afterPath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module3/lab/lab3_8/lab3_8_12/Student.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module3/lab/lab3_8/lab3_8_12/ThreadClient.class" afterPath="$PROJECT_DIR$/out/production/JavaGroup191216/com/brainacad/module3/lab/lab3_8/lab3_8_12/ThreadClient.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/brainacad/module2_17/lab/test_thread3/Main.java" afterPath="$PROJECT_DIR$/src/com/brainacad/module2_17/lab/test_thread3/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyClient.java" afterPath="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyServer.java" afterPath="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/Student.java" afterPath="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/Student.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/ThreadClient.java" afterPath="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/ThreadClient.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/Main.java" afterPath="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MainLocalhost.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainForServer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainForServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MainForServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -98,18 +86,18 @@
       <file leaf-file-name="MainForClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MainForClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="231">
+              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyServer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="59" column="58" lean-forward="false" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+            <state relative-caret-position="451">
+              <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,8 +108,8 @@
       <file leaf-file-name="ThreadClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/ThreadClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+            <state relative-caret-position="264">
+              <caret line="33" column="59" lean-forward="false" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -210,13 +198,13 @@
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_7/lab3_7_4/Person.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_7/lab3_7_4/Main.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/ThreadClient.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/Student.java" />
-        <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyServer.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MainForServer.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyClient.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MainLocalhost.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MainForClient.java" />
+        <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/ThreadClient.java" />
+        <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyServer.java" />
       </list>
     </option>
   </component>
@@ -1092,38 +1080,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/ThreadClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="59" column="58" lean-forward="false" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MainLocalhost.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="34" column="89" lean-forward="true" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MainForClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1140,9 +1100,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MainForServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MainForClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/ThreadClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="33" column="59" lean-forward="false" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_8/lab3_8_12/MyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

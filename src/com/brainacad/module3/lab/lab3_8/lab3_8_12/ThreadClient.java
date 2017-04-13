@@ -31,7 +31,7 @@ public class ThreadClient implements Runnable {
             System.out.println("Server:threadServiceClient " + indexOfThread + " -> Client socket " + indexOfThread + " is created by server");
 
             Student std = (Student)ois.readObject();
-            System.out.println("Server:threadServiceClient" + indexOfThread + " has read student " + std.getName() + " from MyClient");
+            System.out.println("Server:threadServiceClient " + indexOfThread + " has read student " + std.getName() + " from MyClient");
 
             if (users.contains(std)) {
                 oos.writeObject("Msg from Server:threadServiceClient " + indexOfThread + " -> Student " + std.getName() + " has permission");
