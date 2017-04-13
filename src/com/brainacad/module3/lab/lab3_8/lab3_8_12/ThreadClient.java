@@ -39,6 +39,8 @@ public class ThreadClient implements Runnable {
                 oos.writeObject("Msg from Server:threadServiceClient " + indexOfThread + " -> Student " + std.getName() + " has no permission");
             }
 
+            System.out.println("Server:threadServiceClient " + indexOfThread + "has responded to client");
+
             oos.flush();
             oos.close();
             ois.close();
