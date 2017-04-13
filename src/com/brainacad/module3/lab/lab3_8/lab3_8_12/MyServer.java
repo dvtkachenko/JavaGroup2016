@@ -69,7 +69,7 @@ public class MyServer implements Runnable {
                 System.out.println("Server has received request for connect. It is connected");
 
                 new Thread(new ThreadClient(socket, users, threadCounter)).start();
-                System.out.println("Serving thread " + threadCounter + " is created by server");
+                System.out.println("Service thread " + threadCounter + " is created by server");
                 threadCounter++;
             }
 

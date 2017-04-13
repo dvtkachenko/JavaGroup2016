@@ -4,6 +4,7 @@ package com.brainacad.module3.lab.lab3_8.lab3_8_12;
  * Created by diman on 12.04.2017.
  */
 // lab3_8_1
+// this class for running on one computer
 
 public class MainLocalhost {
     public static void main(String[] args) {
