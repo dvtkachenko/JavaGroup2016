@@ -5,7 +5,7 @@ package com.brainacad.module3.lab.lab3_8.lab3_8_12;
  */
 // lab3_8_1
 
-public class Main {
+public class MainLocalhost {
     public static void main(String[] args) {
 
         /**  lab3_8_1
@@ -28,15 +28,15 @@ public class Main {
         threadServer.start();
         System.out.println("threadServer is started");
 
-        Thread threadClient1 = new Thread(new MyClient(new Student("Ivan", "Java SE")));
+        Thread threadClient1 = new Thread(new MyClient(new Student("Ivan", "Java SE"),"localhost"));
         threadClient1.start();
         System.out.println("threadClient1 is started");
 
-        Thread threadClient2 = new Thread(new MyClient(new Student("Anton", "Java SE")));
+        Thread threadClient2 = new Thread(new MyClient(new Student("Anton", "Java SE"),"localhost"));
         threadClient2.start();
         System.out.println("threadClient2 is started");
 
-        Thread threadClient3 = new Thread(new MyClient(new Student("Oleg", "PHP")));
+        Thread threadClient3 = new Thread(new MyClient(new Student("Oleg", "PHP"),"localhost"));
         threadClient3.start();
         System.out.println("threadClient3 is started");
 

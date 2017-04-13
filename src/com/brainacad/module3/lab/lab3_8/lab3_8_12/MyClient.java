@@ -15,30 +15,34 @@ import java.net.UnknownHostException;
 public class MyClient implements Runnable {
 
    private Student std;
+   private String host;
 
-   public MyClient(Student std) {
+   public MyClient(Student std, String host) {
        this.std = std;
+       this.host = host;
    }
 
    @Override
    public void run() {
-       try (Socket socket = new Socket("localhost",256) ) {
+       try (Socket socket = new Socket(host,9999) ) {
+           System.out.println("MyClient socket : " + std.getName() + " -> is created");
+
            ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
            ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
-           System.out.println("Client socket is created");
 
            oos.writeObject(std);
            oos.flush();
-           System.out.println("MyClient is sent to server");
+
+           System.out.println("MyClient : " + std.getName() + " -> is sent to server");
 
            String response = (String)ois.readObject();
 
-           System.out.println("Response from server = " + response);
+           System.out.println("MyClient : " + std.getName() + " -> response from server = " + response);
 
            oos.close();
            ois.close();
 
-           System.out.println("MyClient is disconnected");
+           System.out.println("MyClient : " + std.getName() + " -> is disconnected");
 
        } catch (IOException | ClassNotFoundException e) {
            e.printStackTrace();

@@ -28,16 +28,20 @@ public class ThreadClient implements Runnable {
         try  {
             ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
             ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
-            System.out.println("Client socket " + indexOfThread + " is created");
+            System.out.println("Server:threadServiceClient " + indexOfThread + " -> Client socket " + indexOfThread + " is created by server");
 
             Student std = (Student)ois.readObject();
-            System.out.println("Server has read student from MyClient");
+            System.out.println("Server:threadServiceClient" + indexOfThread + " has read student " + std.getName() + " from MyClient");
 
             if (users.contains(std)) {
-                oos.writeObject("Student " + std.getName() + " has permission");
+                oos.writeObject("Msg from Server:threadServiceClient " + indexOfThread + " -> Student " + std.getName() + " has permission");
             } else {
-                oos.writeObject("Student " + std.getName() + " has no permission");
+                oos.writeObject("Msg from Server:threadServiceClient " + indexOfThread + " -> Student " + std.getName() + " has no permission");
             }
+
+            oos.flush();
+            oos.close();
+            ois.close();
 
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

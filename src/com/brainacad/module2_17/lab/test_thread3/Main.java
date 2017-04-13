@@ -94,7 +94,7 @@ class Printer extends Thread {
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Method main of class Main started");
+        System.out.println("Method main of class MainLocalhost started");
 
         Store store = new Store();
         Counter counter = new Counter(store);
@@ -103,6 +103,6 @@ public class Main {
         counter.start();
         printer.start();
 
-        System.out.println("Method main of class Main finished");
+        System.out.println("Method main of class MainLocalhost finished");
     }
 }

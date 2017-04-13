@@ -57,7 +57,7 @@ public class MyServer implements Runnable {
     // lab3_8_2
     @Override
     public void run() {
-        try (ServerSocket listener = new ServerSocket(256)) {
+        try (ServerSocket listener = new ServerSocket(9999)) {
 
             System.out.println("Server waits");
             init();
@@ -68,8 +68,9 @@ public class MyServer implements Runnable {
                 Socket socket = listener.accept();
                 System.out.println("Server is connected");
 
-                new Thread(new ThreadClient(socket, users, threadCounter++)).start();
-                System.out.println("Thread " + threadCounter + " is created");
+                new Thread(new ThreadClient(socket, users, threadCounter)).start();
+                System.out.println("Thread " + threadCounter + " is created by server");
+                threadCounter++;
             }
 
         } catch (IOException e) {

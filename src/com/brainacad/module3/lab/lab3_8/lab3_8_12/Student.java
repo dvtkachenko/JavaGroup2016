@@ -60,9 +60,9 @@ public class Student implements Serializable{
 
         Student student = (Student) o;
 
-        if (getId() != student.getId()) return false;
-        if (!getName().equals(student.getName())) return false;
-        return getCourse().equals(student.getCourse());
+//        if (getId() != student.getId()) return false;
+//        if (!getName().equals(student.getName())) return false;
+        return getName().equals(student.getName());
     }
 
     @Override
