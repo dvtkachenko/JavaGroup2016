@@ -18,11 +18,11 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Please enter size of array -> ");
+        System.out.print("Please enter size of array -> ");
+        Integer[] arr = new Integer[sc.nextInt()];
 
         Random rand = new Random();
 
-        Integer[] arr = new Integer[sc.nextInt()];
         for (int i=0;i<arr.length;i++) {
             arr[i] = rand.nextInt(100);
         }
