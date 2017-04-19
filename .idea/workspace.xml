@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ff06218-dd91-4058-af93-8fd6adea2904" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/time_task_manager/database/oracle/OracleDB.java" afterPath="$PROJECT_DIR$/src/com/time_task_manager/database/oracle/OracleDB.java" />
-    </list>
+    <list default="true" id="5ff06218-dd91-4058-af93-8fd6adea2904" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,18 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TestAccessDB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ThinkingJava/src/TestAccessDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="59" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="OracleDB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/time_task_manager/database/oracle/OracleDB.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,8 +66,8 @@
       <file leaf-file-name="CalculateProxy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_1/CalculateProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="451">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#374#375#0" expanded="true" />
@@ -101,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculateBitwiseImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CalculateBitwiseImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_2/CalculateBitwiseImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -111,6 +97,18 @@
                 <element signature="e#225#226#0" expanded="true" />
                 <element signature="e#267#268#0" expanded="true" />
                 <element signature="e#293#294#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalculateProxy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_2/CalculateProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_2/lab3_2_1/DemoSerialize.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_2/lab3_2_1/SerializeDemo.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_2/lab3_2_1/Employee.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_2/lab3_2_4/User.java" />
@@ -235,6 +232,7 @@
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_2/CalculateImpl.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_2/CalculateBitwise.java" />
         <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_2/CalculateBitwiseImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_2/CalculateProxy.java" />
       </list>
     </option>
   </component>
@@ -832,13 +830,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_7/lab3_7_4/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_7/lab3_7_4/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1148,7 +1139,7 @@
         <state relative-caret-position="473">
           <caret line="59" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1218,18 +1209,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_1/CalculateProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_2/Calculate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1254,6 +1233,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_1/CalculateProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_2/CalculateBitwiseImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -1263,6 +1254,16 @@
             <element signature="e#225#226#0" expanded="true" />
             <element signature="e#267#268#0" expanded="true" />
             <element signature="e#293#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/brainacad/module3/lab/lab3_9/lab3_9_2/CalculateProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
