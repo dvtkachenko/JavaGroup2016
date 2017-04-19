@@ -12,7 +12,7 @@ import java.sql.SQLException;
 
 final class OracleDBInfo {
     public static final String DB_DRIVER = "oracle.jdbc.driver.OracleDriver";
-    public static final String DB_CONNECTION = "jdbc:oracle:thin:@localhost:1521:mkyong";
+    public static final String DB_CONNECTION = "jdbc:oracle:thin:@localhost:1521";
 
     public static final String DB_USER = "TIMETASKMANAGER";
     public static final String DB_PASSWORD = "12345";
@@ -36,5 +36,9 @@ public class OracleDB implements Database {
             System.out.println(e.getMessage());
         }
         return dbConnection;
+    }
+
+    public static void main(String[] args) {
+        Connection dbConnection = new OracleDB().getDBConnection();
     }
 }
