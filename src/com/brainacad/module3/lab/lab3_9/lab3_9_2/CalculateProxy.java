@@ -36,15 +36,20 @@ public class CalculateProxy implements InvocationHandler {
         return null;
     }
 
-    public static Object newInstance(Object obj) {
+    public static Object newInstance(Class obj) {
 
-        Object[] delegates = new Object[] {new CalculateImpl(), new CalculateBitwiseImpl()};
+        Object[] delegators = new Object[] {new CalculateImpl(), new CalculateBitwiseImpl()};
         List<Class<?>> listInterfaces = Arrays.asList(Calculate.class, CalculateBitwise.class);
 
+        if (listInterfaces.contains(obj)) {
+            Class[] proxyInterfaces = listInterfaces.toArray(new Class[listInterfaces.size()]);
+
+            return Proxy.newProxyInstance(obj.getClassLoader(),
+                    proxyInterfaces,
+                    new CalculateProxy(proxyInterfaces, delegators));
+        }
+        System.out.println("Can not creat object !");
         return null;
-//        return Proxy.newProxyInstance(obj.getClass().getClassLoader(),
-//                obj.getClass().getInterfaces(),
-//                new CalculateProxy(obj));
     }
 
 }
