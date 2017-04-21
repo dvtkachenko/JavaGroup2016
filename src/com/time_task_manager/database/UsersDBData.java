@@ -1,17 +1,16 @@
-package com.time_task_manager.model;
+package com.time_task_manager.database;
 
 /**
  * Created by diman on 19.04.2017.
  */
 
-public class UserData {
-    private int user_id;
+public class UsersDBData {
+    private int userID;
     private String userName;
     private String userPassword;
-    private String userDescription;
 
     public int getUser_id() {
-        return user_id;
+        return userID;
     }
 
     public String getUserName() {
@@ -30,21 +29,12 @@ public class UserData {
         this.userPassword = userPassword;
     }
 
-    public String getUserDescription() {
-        return userDescription;
-    }
-
-    public void setUserDescription(String userDescription) {
-        this.userDescription = userDescription;
-    }
-
     @Override
     public String toString() {
-        return "UserData{" +
-                "user_id=" + user_id +
+        return "UsersDBData{" +
+                "user_id=" + userID +
                 ", userName='" + userName + '\'' +
                 ", userPassword='" + userPassword + '\'' +
-                ", userDescription='" + userDescription + '\'' +
                 '}';
     }
 }

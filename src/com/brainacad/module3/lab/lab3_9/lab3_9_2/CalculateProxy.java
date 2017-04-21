@@ -41,9 +41,10 @@ public class CalculateProxy implements InvocationHandler {
         Object[] delegates = new Object[] {new CalculateImpl(), new CalculateBitwiseImpl()};
         List<Class<?>> listInterfaces = Arrays.asList(Calculate.class, CalculateBitwise.class);
 
-        return Proxy.newProxyInstance(obj.getClass().getClassLoader(),
-                obj.getClass().getInterfaces(),
-                new CalculateProxy(obj));
+        return null;
+//        return Proxy.newProxyInstance(obj.getClass().getClassLoader(),
+//                obj.getClass().getInterfaces(),
+//                new CalculateProxy(obj));
     }
 
 }
